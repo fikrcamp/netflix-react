@@ -1,14 +1,20 @@
-function MovieCard() {
+
+
+function MovieCard(props) {
+
   return (
     <div className="movie-card">
       <div className="movie-image">
         <img
-          src="https://i.pinimg.com/originals/a2/34/75/a234753b69e3bd27b7f1d448956c38af.jpg"
+          src={props.Movies.show.image.medium}
           alt="movie"
         />
       </div>
 
-      <h3 className="movie-heading">Breaking Bad</h3>
+      <h3 className="movie-heading">{props.Movies.show.name}</h3>
+      <p>⭐{props.Movies.show.rating.average}</p>
+      <p>{props.Movies.show.language}</p>
+      <button href={props.Movies.show.officialSite} className="btn">Official Site</button>
     </div>
   );
 }
