@@ -92,3 +92,14 @@
   font-weight: bold;
   color: red;
 }
+
+.btn {
+  background-color: rgb(242, 21, 21);
+  color:white;
+  height: 1.875rem;
+  width: 5rem;
+}
+p{
+  margin-top: 0.125;
+  margin-bottom: 0.125;
+}
