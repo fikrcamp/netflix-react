@@ -1,14 +1,16 @@
-function MovieCard() {
+function MovieCard(props) {
+  const genres = props.data.show.genres.join(' | ')
   return (
     <div className="movie-card">
       <div className="movie-image">
-        <img
-          src="https://i.pinimg.com/originals/a2/34/75/a234753b69e3bd27b7f1d448956c38af.jpg"
-          alt="movie"
-        />
+      <img src={props.data.show.image?.medium}/> 
       </div>
-
-      <h3 className="movie-heading">Breaking Bad</h3>
+      <h3 className="movie-heading">{props.data.show.name}</h3>
+      <div className="movie-rating">⭐{props.data.show.rating.average || 'N/A'}</div>
+      <h5 className="movie-genre">{genres}</h5>
+      <h5 className="schedule-movie">{props.data.show.schedule.time},{props.data.show.schedule.days}</h5>
+      <button className="site-url"><a href={props.data.show.url}>Official Site</a></button>
+      
     </div>
   );
 }
