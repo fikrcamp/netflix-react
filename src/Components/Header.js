@@ -10,7 +10,7 @@ function Header() {
           <li>Tv Shows</li>
           <li>Movies</li>
           <li>Recently Added</li>
-          <li>My List</li>
+          <li>My List</li>s
         </ul>
       </div>
 

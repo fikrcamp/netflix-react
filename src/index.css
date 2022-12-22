@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro:wght@600;700;900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -19,6 +20,7 @@
   display: flex;
   align-items: center;
 }
+
 .nav li {
   list-style: none;
   padding: 0px 6px;
@@ -38,9 +40,11 @@
   align-items: center;
   padding: 25px 0px;
 }
+
 .search-input {
   display: flex;
 }
+
 .search-box {
   margin-top: 10px;
   padding: 5px 5px;
