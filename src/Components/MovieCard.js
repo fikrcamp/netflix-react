@@ -1,14 +1,21 @@
-function MovieCard() {
+
+import react, { useState } from "react"
+
+function MovieCard(props) {
+  // const [name, setName] = useState()
+  // const [image, setImage] = useState()
+  // setImage(props.data)
+
+  // console.log(props.item)
   return (
     <div className="movie-card">
       <div className="movie-image">
         <img
-          src="https://i.pinimg.com/originals/a2/34/75/a234753b69e3bd27b7f1d448956c38af.jpg"
+          src={props.item.image.medium}
           alt="movie"
         />
       </div>
-
-      <h3 className="movie-heading">Breaking Bad</h3>
+      <h3 className="movie-heading">{props.item.name}</h3>
     </div>
   );
 }
